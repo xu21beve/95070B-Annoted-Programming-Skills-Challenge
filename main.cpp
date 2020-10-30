@@ -50,34 +50,34 @@ void competition_initialize() {
  */
 
 void autonomous() {
-	strafeOdom(-24, 8, 180);
-	flywheel(1000, 1);
-	intakes(500, 1, 0);
-	strafeOdom(-64, 8, -135);
-	strafeOdom(-65, 7, -135);
-	flywheel(1000, 1);
-	intakes(0, 1, 0);
-	strafeOdom(-48, 48, 22.5);
-	strafeOdom(-32, 48, 45);
-	intakes(0, 1, 0);
-	strafeOdom(-24, 52, 45);
-	turnOdom(180);
-	intakes(500, 1, 1);
-	flywheel(2500, 1);
-	strafeOdom(16, 48, 90);
-	intakes(3000, 1, 1);
-	intakes(0, 1, 0);
-	strafeOdom(95, 49, 45);
-	intakes(3500, 1, 1);
-	intakes(0, 1, 0);
-	strafeOdom(-20, 48, -135);
-	strafeOdom(-24, 82, 0);
-	intakes(1500, 1, 1);
-	flywheel(1500, 1);
-	intakes(0, 1, 0);
-	strafeOdom(-68, 89, -45);
-	intakes(2000, 1, 1);
-	flywheel(3000, 1);
+	strafeOdom(-24, 8, 180);							//MOVES TO MIDDLE BOTTOM GOAL
+	flywheel(1000, 1);								//PLACES PRELOAD ON TOP
+	intakes(500, 1, 0);								//STARTS INTAKING WHILE MOVING
+	strafeOdom(-64, 8, -135);							//MOVES TO LEFT BOTTOM GOAL TO INTAKE BALL
+	strafeOdom(-65, 7, -135);							//MOVES CLOSER TO GOAL
+	flywheel(1000, 1);								//OUTTAKES BALL ON TO TOP
+	intakes(0, 1, 0);								//STARTS INTAKING WHILE MOVING
+	strafeOdom(-48, 48, 22.5);							//MOVES TO INTAKE BALL BETWEEN LEFT MIDDLE AND CENTER GOAL
+	strafeOdom(-32, 48, 45);							//MOVES TO CENTER GOAL
+	intakes(0, 1, 0);								//STARTS INTAKING WHILE MOVING
+	strafeOdom(-24, 52, 45);							//INTAKES THE TWO BLUE BALLS NEAR CENTER
+	turnOdom(180);									//TURNS TOWARDS CENTER GOAL
+	intakes(500, 1, 1);								//PLACES 3 BLUE BALLS IN THE CENTER GOAL
+	flywheel(2500, 1);								//PLACES LAST BALL ON TOP
+	strafeOdom(16, 48, 90);								//MOVES TO RIGHT MIDDLE GOAL
+	intakes(3000, 1, 1);								//CIRCULATES BLUE BALL TO TOP
+	intakes(0, 1, 0);								//STARTS INTAKING WHILE MOVING
+	strafeOdom(95, 49, 45);								//MOVES TO RIGHT TOP GOAL
+	intakes(3500, 1, 1);								//INTAKES RED BALL AND CIRCULATES BLUE BALL TO TOP
+	intakes(0, 1, 0);								//STARTS INTAKING WHILE MOVING
+	strafeOdom(-20, 48, -135);							//MOVES TO CENTER GOAL AND INTAKES RED BALL
+	strafeOdom(-24, 82, 0);								//MOVES TO MIDDLE TOP GOAL
+	intakes(1500, 1, 1);								//INTAKES BALLS IN GOAL WITH BLUE BALL LAST
+	flywheel(1500, 1);								//PLACES BALLS IN GOAL WITH BLUE BALL ON TOP
+	intakes(0, 1, 0);								//STARTS INTAKING WHILE MOVING
+	strafeOdom(-68, 89, -45);							//MOVES TO LEFT TOP GOAL AND INTAKES RED BALL
+	intakes(2000, 1, 1);								//INTAKES BALLS IN GOAL WITH BLUE BALL LAST
+	flywheel(3000, 1);								//PLACES BALLS IN GOAL WITH BLUE BALL ON TOP
 }
 
 
